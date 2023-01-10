@@ -1,6 +1,6 @@
 import React from "react";
 //import logo from './logo.svg';
-import "./App.css";
+/* import "./App.css";
 import anh from "./image/my.jpg";
 function App() {
   return (
@@ -29,3 +29,14 @@ function App() {
 }
 
 export default App;
+ */
+import "./App.css";
+import JSX from "./Components/example/1-JSX"
+function Home() {
+  return (
+    <>
+      <JSX />
+    </>
+  );
+}
+export default Home;

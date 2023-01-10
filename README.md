@@ -168,3 +168,15 @@ npm start
 // May o nha
 - Install npm: npm install
 - Start app: npm start
+
+data types
+-booble
+-string
+-number
+-undefined
+-null
+-object
+-array
+
+//tham chiếu, tham trị
+//copy sâu, copy nông

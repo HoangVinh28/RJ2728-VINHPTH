@@ -1,19 +1,23 @@
-
-import React from "react";
-
-interface IProps {
-  text: string;
-  color1: string;
-  color2: string;
+import Styles from "./BlockUI1.module.css";
+interface Ipros {
+  title: string;
+  bgTitle: string;
   percent: number;
+  bgProcess: string;
 }
-const BlockUI: React.FC<IProps> = (props) => {
-  const { text,   percent } = props;
+const BlockUI1: React.FC<Ipros> = (props) => {
+  const { title, bgTitle, percent, bgProcess } = props;
   return (
-    <div className="progress">
-      <div className="progress-bar bg-danger" style ={{width: 200}}>{text}</div>
-      <div className="progress-bar bg-secondary" style={{width: percent}}>{`${percent}%`}</div>
+    <div className="d-flex w-50 m-auto border">
+      <div className={Styles.w__100} style={{ backgroundColor: bgTitle }}>
+        {title}
+      </div>
+      <div className={Styles.w__500}>
+        <div style={{ width: `${percent}%`, backgroundColor: bgProcess }}>
+          {percent}%
+        </div>
+      </div>
     </div>
   );
 };
-export default BlockUI;
+export default BlockUI1;

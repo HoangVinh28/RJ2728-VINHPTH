@@ -91,3 +91,26 @@
 .name_img{
    width: 700px;
 }
+.bg_green{
+    background-color: green;
+}
+.bg{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+.bg_red{
+    background-color: red;
+}
+.bg_blue{
+    background-color: blue;
+}
+.bg_yellow{
+    background-color: yellow;
+}
+.bg_violet{
+    background-color: violet;
+}

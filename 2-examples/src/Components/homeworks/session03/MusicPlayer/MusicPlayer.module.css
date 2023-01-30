@@ -1,0 +1,25 @@
+.back_white{
+    background-color: white;
+    width: auto;
+    height: 40px;
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.color_ccc{
+    color: #ccc;
+    width: 100px;
+    margin-left: 20px;
+}
+.color_cccc{
+    color: #ccc;
+    margin-left: 40px;
+}
+.m_left_20{
+    margin-left: 40px;
+}
+.f_bold{
+    font-weight: bold;
+    width: 80px;
+}
+

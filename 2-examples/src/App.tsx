@@ -48,6 +48,13 @@ import BlockUI5 from "./Components/homeworks/session02/BlockUI5/BlockUI5";
 import BlockUI6 from "./Components/homeworks/session02/BlockUI6/BlockUI6";
 import BlockUI7 from "./Components/homeworks/session02/BlockUI7/BlockUI7";
 import MusicPlayer from "./Components/homeworks/session03/MusicPlayer/MusicPlayer";
+import Countdown from "./Components/example/4-Life-Cicyle/Countdown'";
+import ChangColor from "./Components/ex/ChangColor";
+import LikeButton from "./Components/homeworks/session03/LikeButton";
+import InforUser from "./Components/ex/InforUser/InforUser";
+import TabGroup from "./Components/homeworks/session03/Tabs/Tabs";
+import Tabs from "./Components/homeworks/session03/Tabs/Tabs";
+import Accordicons from "./Components/homeworks/session03/Accordicons/Accordicons";
 
 //import BlockUI from "./Components/example/Session03/State";
 //import BlockUIClass from "./Components/example/Session03/StateClass";
@@ -198,14 +205,19 @@ function App() {
       <BlockUI7 discount="-13%" img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "300px", maxHeight: "200px" ,marginLeft: "20px" , marginBottom : "20px" }} /> }  price1="$96" price2="$85" price3="18% off" title="Edifier Powered Bookshelf Speakers" bgProcess="#ffd11a" percent={85} evaluate="15"/>
       <BlockUI7 discount="-37%" img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "300px", maxHeight: "200px" ,marginLeft: "20px" , marginBottom : "20px" }} /> }  price1="$62.99" price2="$45.9" price3="18% off" title="LG White Front Load Steam Washer" bgProcess="#ffd11a" percent={85} evaluate="20"/>
       </div> */}
-      <h4>Most Popular</h4>
+      {/* <h4>Most Popular</h4>
         <div>92 Songs</div>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="My Stress" title2="NF Real music" title3="3:22" icon={<FcLike/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="Mirage" title2="Else Twin" title3="4:23" icon={<FcLikePlaceholder/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="My Stress" title2="NF Real music" title3="3:58" icon={<FcLike/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px"}} /> } title1="The Hils" title2="The Weekend" title3="5:33" icon={<FcLikePlaceholder/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{maxWidth: "55px", maxHeight: "35px" , marginTop: "5px"}} /> } title1="Paralyzed" title2="NF Real music" title3="5:08" icon={<FcLike/>}/>
-      <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="Timeless" title2="Lucidious" title3="3:50" icon={<FcLikePlaceholder/>}/>
+      <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="Timeless" title2="Lucidious" title3="3:50" icon={<FcLikePlaceholder/>}/> */}
+     {/*  <Countdown/> */}
+     {/* <ChangColor/> */}
+     {/* <InforUser/> */}
+    {/*  <Tabs/> */}
+    < Accordicons/>
     </>
   );
 }

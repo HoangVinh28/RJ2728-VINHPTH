@@ -55,6 +55,10 @@ import InforUser from "./Components/ex/InforUser/InforUser";
 import TabGroup from "./Components/homeworks/session03/Tabs/Tabs";
 import Tabs from "./Components/homeworks/session03/Tabs/Tabs";
 import Accordicons from "./Components/homeworks/session03/Accordicons/Accordicons";
+import List from "./Components/pages/User/List/List";
+import UserForm from "./Components/pages/User/Form/UserForm";
+import BaseWebRouter from "./Components/pages/User/BaseWebRouter";
+import Gallery from "./Components/homeworks/session03/Gallery/Gallery";
 
 //import BlockUI from "./Components/example/Session03/State";
 //import BlockUIClass from "./Components/example/Session03/StateClass";
@@ -213,11 +217,15 @@ function App() {
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px"}} /> } title1="The Hils" title2="The Weekend" title3="5:33" icon={<FcLikePlaceholder/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{maxWidth: "55px", maxHeight: "35px" , marginTop: "5px"}} /> } title1="Paralyzed" title2="NF Real music" title3="5:08" icon={<FcLike/>}/>
       <MusicPlayer  img={<img src={require("./assets/images/anh2.jpg")} alt="" style={{ maxWidth: "55px", maxHeight: "35px" , marginTop: "5px" }} /> } title1="Timeless" title2="Lucidious" title3="3:50" icon={<FcLikePlaceholder/>}/> */}
-     {/*  <Countdown/> */}
-     {/* <ChangColor/> */}
-     {/* <InforUser/> */}
-    {/*  <Tabs/> */}
-    < Accordicons/>
+      {/*  <Countdown/> */}
+      {/* <ChangColor/> */}
+      {/* <InforUser/> */}
+      {/* <Tabs/> */}
+      {/* < Accordicons/> */}
+      {/*  <List/> */}
+      {/* <UserForm/> */}
+      {/* < BaseWebRouter/> */}
+      <Gallery />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //import logo from './logo.svg';
 /* import "./App.css";
@@ -58,7 +58,9 @@ import Accordicons from "./Components/homeworks/session03/Accordicons/Accordicon
 import List from "./Components/pages/User/List/List";
 import UserForm from "./Components/pages/User/Form/UserForm";
 import BaseWebRouter from "./Components/pages/User/BaseWebRouter";
-import Gallery from "./Components/homeworks/session03/Gallery/Gallery";
+import Login from "./Components/pages/Auth/Login";
+import BaseWeb from "./Components/Web/Users/BaseWeb";
+//import Gallery from "./Components/homeworks/session03/Gallery/Gallery";
 
 //import BlockUI from "./Components/example/Session03/State";
 //import BlockUIClass from "./Components/example/Session03/StateClass";
@@ -117,6 +119,9 @@ function VioletLargeIcon() {
   );
 }
 function App() {
+
+    const[isLogin, setIsLogin] = useState(false);
+
   return (
     <>
       {/* <JSX /> */}
@@ -224,8 +229,14 @@ function App() {
       {/* < Accordicons/> */}
       {/*  <List/> */}
       {/* <UserForm/> */}
-      {/* < BaseWebRouter/> */}
-      <Gallery />
+     {/*  < BaseWebRouter/> */}
+      {/* <Gallery /> */}
+      {/* {isLogin ? (
+        < BaseWebRouter setIsLogin={setIsLogin}/>
+      ) : (<Login setIsLogin={setIsLogin}/>)} */}
+      {isLogin ? (
+        < BaseWeb setIsLogin={setIsLogin}/>
+      ) : (<Login setIsLogin={setIsLogin}/>)} 
     </>
   );
 }

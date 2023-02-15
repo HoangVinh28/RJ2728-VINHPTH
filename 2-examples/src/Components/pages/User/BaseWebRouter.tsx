@@ -1,28 +1,25 @@
-import React from "react";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+//import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navigation from "../../common/Navigation/Navigation";
 import UserDetail from "./Detail/UserDetail";
 import UserForm from "./Form/UserForm";
 import List from "./List/List";
-import Styles from "../User/BaseWebRouter.module.css"
 
-function BaseWebRouter() {
+
+interface IProps {
+  setIsLogin: (value: boolean) => void;
+}
+
+function BaseWebRouter(props: IProps) {
+  const { setIsLogin } = props;
   return (
     <BrowserRouter>
-    <ul className={Styles.navigation}>
-        <li>
-        <Link to={"/"} className={Styles.link}>LIST</Link>
-        </li>
-        <li><Link to={"/form"} className={Styles.link}>FORM</Link></li>
-        <li><Link to={"/detail"} className={Styles.link}>DETAIL</Link></li>
-    </ul>
-    
-    
-    
+     <Navigation setIsLogin={setIsLogin}/>
       <Routes>
-        <Route path="/" element={<List/>}/>
-        <Route path="/detail/:id" element={<UserDetail/>}/>
-        <Route path="/form" element={<UserForm/>}/>
-        <Route path="/form/:id" element={<UserForm/>}/>
+        <Route path="/" element={<List />} />
+        <Route path="/detail/:id" element={<UserDetail />} />
+        <Route path="/form" element={<UserForm />} />
+        <Route path="/form/:id" element={<UserForm />} />
       </Routes>
     </BrowserRouter>
   );
